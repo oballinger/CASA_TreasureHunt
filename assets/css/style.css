@@ -1,5 +1,5 @@
 :root {
-  --content-width: 50%;
+  --content-width: 80%;
 }
 
 /* base styles */
@@ -145,13 +145,12 @@ header {
 }
 
 header h1 {
-  margin-left: 40rem;
   margin-top: 4rem;
   font-size: 3.5rem;
   font-weight: bold;
-  width: 36%;
+  width: 100%;
   line-height: 1.4;
-  text-align: left;
+  text-align: center;
   margin-bottom: 3rem;
 }
 
