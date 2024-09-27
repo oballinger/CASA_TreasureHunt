@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
       integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>CASA 2023 Treasure Hunt</title>
+    <title>CASA Treasure Hunt</title>
   </head>
 
   <body>
@@ -131,3 +131,21 @@
       <p></p>
 <p></p><p></p><p></p><p></p>
       </article>
+
+<script>
+  // Get the current year
+  const currentYear = new Date().getFullYear();
+
+  // Function to replace "2023" with the current year in the entire document
+  function replaceYearInTextNodes() {
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+    let node;
+    
+    while (node = walker.nextNode()) {
+      node.nodeValue = node.nodeValue.replace(/2023/g, currentYear);
+    }
+  }
+
+  // Call the function to replace "2023"
+  replaceYearInTextNodes();
+</script>
